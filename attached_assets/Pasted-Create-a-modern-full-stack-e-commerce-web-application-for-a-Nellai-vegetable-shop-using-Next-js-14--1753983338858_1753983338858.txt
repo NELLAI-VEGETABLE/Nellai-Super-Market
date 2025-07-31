@@ -1,0 +1,57 @@
+Create a modern, full-stack e-commerce web application for a Nellai vegetable shop using Next.js 14, TypeScript, Tailwind CSS, and Supabase. 
+The app should be production-ready with all essential e-commerce features.
+## Tech Stack Requirements:- Next.js 14 with App Router- TypeScript for type safety- Tailwind CSS for styling- Supabase for backend (PostgreSQL, Auth, Storage)- Lucide React for icons- React Hook Form for form handling- Zod for validation- NextAuth.js or Supabase Auth- Vercel for deployment
+## Core Features to Implement:### 
+1. Authentication System- User registration with email/password- Email verification workflow- Login/logout functionality- Protected routes- User profile management- Session persistence### 
+2. Product Management- Product catalog with categories (Vegetables, Fruits)- Product search and filtering- Product detail pages with images- Featured products section- Product availability status- Price display with original/discounted prices###
+ 3. Shopping Cart- Add/remove products- Quantity management- Cart persistence across sessions- Real-time cart updates- Cart summary with totals- Cart badge with item count###
+ 4. Checkout Process- Multi-step checkout (Information → Delivery → Payment)- Address collection form- Order summary with subtotal, delivery fees, total- Payment method selection (COD, Online Payment)- Order confirmation- Order number generation###
+ 5. Payment Integration- Cash on Delivery (COD) option- Razorpay integration for online payments- Payment status tracking- Order status management###
+ 6. Order Management- Order history for users- Order tracking functionality- Order status updates- Order details view### 
+7. User Interface- Modern, responsive design- Mobile-first approach- Green color theme (#16a34a)- Clean navigation with search- Loading states and error handling- Toast notifications- Progress indicators###
+ 8. Database SchemaCreate these tables in Supabase:- users (id, email, name, phone, created_at, updated_at)- products (id, name, category, price, original_price, image, description, unit, in_stock, featured)- orders (id, user_id, order_number, customer_details, items, totals, payment_method, status, created_at)- payment_details (id, order_id, payment_method, amount, status, gateway_response)###
+ 9. Key Pages to Build:- Home page with hero section, featured products, categories- Products listing page with search and filters- Product detail page- Shopping cart page- Checkout pages (multi-step)- User authentication pages (login/register)- Order history page- Order tracking page- Contact page### 
+10. Advanced Features:- Real-time search functionality- Category-based product browsing- Responsive image optimization- SEO optimization- Error boundaries- Loading skeletons- Form validation- Toast notifications- Order status tracking###
+ 11. Performance & SEO:- Image optimization with Next.js Image component- SEO meta tags- Sitemap generation- Performance optimization- Mobile responsiveness- Accessibility compliance### 
+12. Security:- Row Level Security (RLS) in Supabase- Input validation and sanitization- Protected API routes- Secure payment handling- Environment variable management## Design Requirements:- Use a green color scheme (#16a34a as primary)- Modern, clean interface- Mobile-responsive design- Intuitive navigation- Clear call-to-action buttons- Professional product presentation- Easy-to-use checkout flow## Deployment:- Deploy on Vercel- Configure environment variables- Set up Supabase project- Configure custom domain (optional)- Set up analytics (optional)## Additional Notes:- Focus on user experience and conversion optimization- Implement proper error handling throughout- Add comprehensive loading states- Ensure mobile responsiveness- Follow e-commerce best practices- Include proper TypeScript types- Add comprehensive documentation- Implement proper testing strategyThe app should be production-ready and handle real e-commerce transactions with proper security measures and user experience considerations.
+ Supabase 
+URL:https://dmhzgyueyzkkavznxjrq.supabase.co
+anonkey:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtaHpneXVleXpra2F2em54anJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5Nzg2OTMsImV4cCI6MjA2OTU1NDY5M30.G3KmiwLsoRjiNPGrCMHAAYMe0mLSkmyAGHYQGcFAl8Y
+
+[You are a web developer tasked with creating a complete e-commerce website for "Nellai Vegetable Shop." Build a fully functional online store using the following specifications:
+Project Requirements
+Store Name: Nellai Vegetable Shop
+Color Theme: White and green color scheme (Primary: various shades of green—e.g., #009966, #43A047, #27ae60, #2ecc40, #198754—accented by white and light grays)
+Target: Simple, clean, basic, and user-friendly interface
+Contact & Store Information (Display Prominently)
+Address: Old No.11, Kamarajapuram Main Rd, Kamarajapuram, Gowriwakkam, Sembakkam, Chennai, Tamil Nadu 600073
+Contact Number: +91 9884388147
+Email: nellaivegetableshop@gmail.com
+(Include this info in the website footer, the contact page, and anywhere customers would expect to find shop details.)
+Essential E-commerce Features to Include
+Homepage: Hero section, featured products, categories overview
+Product Catalog: Product grid with search and filter functionality
+Product Details: Individual product pages with images, descriptions, pricing
+Shopping Cart: Add/remove items, quantity adjustment, price calculation
+User Authentication: Login/register functionality
+Checkout Process: Customer information form, payment method selection
+Navigation: Header with logo, menu, search bar, cart icon
+Footer: Display contact information (address, phone, email), important links, social media icons
+Technical Specifications
+Use HTML5, CSS3, and JavaScript (or specify your preferred framework)
+Implement responsive design for both mobile and desktop
+Include basic form validation
+Create at least 8–10 sample products across different categories (vegetables, fruits, etc.)
+Ensure cross-browser compatibility
+Design Guidelines
+Primary colors: Various shades of green (#009966, #43A047, #27ae60, #2ecc40, #198754, etc.)
+Secondary color: White (#FFFFFF) and light grays for backgrounds, cards, and UI elements
+Typography: Clean fonts, clearly readable, with ample white space
+Hover effects & transitions: Implement subtle hover effects and smooth CSS transitions throughout
+Consistent styling: Maintain consistent color, spacing, and component design website-wide
+Deliverables
+Complete source code organized by file structure (HTML, CSS, JavaScript, and any assets
+Include brief setup instructions for local deployment
+Note:
+All UI and features should reflect the white and green palette and ensure a welcoming, fresh "vegetable shop" feel. Confirm that all greens used work well with white/light backgrounds for readability and visual appeal.
+Always display the store’s address, contact number, and email prominently in the footer and on the contact page for easy customer access.]
